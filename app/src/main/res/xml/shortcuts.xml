@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <capability android:name="actions.intent.ORDER_MENU_ITEM">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.androiddevops"
+            android:targetClass="com.example.androiddevops.AppActionsService">
+            <parameter
+                android:name="menuItem.name"
+                android:key="itemName"/>
+        </intent>
+    </capability>
+
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.androiddevops"
+            android:targetClass="com.example.androiddevops.AppActionsService">
+            <parameter
+                android:name="menuItem.name"
+                android:key="itemName"/>
+        </intent>
+    </capability>
+
+    // Source - https://stackoverflow.com/q/79087337
+    // Posted by KomalG, modified by community. See post 'Timeline' for change history
+    // Retrieved 2026-07-21, License - CC BY-SA 4.0
+
+    <capability
+        android:name="custom.actions.intent.GET_HISTORY_ITEM"
+        app:queryPatterns="@array/queries_cap">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.androiddevops.MainActivity"
+            android:targetPackage="com.example.androiddevops">
+            <url-template android:value="mytestapp://historyitem.com/app-custom-requests/{?item,country}" />
+            <parameter
+                android:name="item"
+                android:key="item"
+                android:mimeType="https://schema.org/Text" />
+
+            <parameter
+                android:name="country"
+                android:key="country"
+                android:mimeType="https://schema.org/Text" />
+        </intent>
+    </capability>
+
+
+
+</shortcuts>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AppFunctionAppMetadata xmlns:appfn="http://schemas.android.com/apk/res-auto"
+    appfn:description="Provides tools for restaurant ordering, including finding low-price items and placing orders.
+Operational Patterns:
+  - Use 'findLowestPriceItem' to identify the cheapest item.
+  - Then call 'orderItemByName' with that item name to complete order placement.
+  - Alternatively, use 'orderLowestPriceItem' to find and order in one step.
+Constraints:
+  - Item name for 'orderItemByName' must map to exactly one menu item.
+  - Category filters are optional for lowest-price queries."
+    appfn:displayDescription="@string/app_function_app_display_description"/>

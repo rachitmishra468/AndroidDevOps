@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidDevOps</string>
+    <string name="app_function_app_display_name">Restaurant App</string>
+    <string name="app_function_app_display_description">Restaurant AppFunctions Demo</string>
+
+    <string-array name="queries_cap">
+        <item>check the price of $item in $country</item>
+        <item>get price history of $item in $country</item>
+    </string-array>
+</resources>
