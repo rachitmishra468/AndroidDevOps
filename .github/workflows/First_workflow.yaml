@@ -1,0 +1,9 @@
+name : first-workflow
+
+on : [push ,workflow_dispatch]
+jobs:
+  first-job:
+    run-on: ubuntu-latest
+    steps:
+      - name: first-step
+        runs-on: echo "hello this is my first job"
